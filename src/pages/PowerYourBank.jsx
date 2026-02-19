@@ -90,7 +90,18 @@ const [grid, setGrid] = useState(() =>
   }, [grid]);
 
   return (
-    <div className="font-montserrat relative min-h-screen flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_70%_40%,#2a003f_0%,#160024_40%,#0b0015_70%,#000000_100%)]">
+    <div className="
+  font-montserrat
+  relative
+  min-h-screen
+  flex
+  items-center
+  justify-center
+  overflow-hidden
+  select-none
+  touch-none
+">
+
       {/* Purple Glow Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-800/20 via-transparent to-black/60" />
 
@@ -102,7 +113,18 @@ const [grid, setGrid] = useState(() =>
       {/* Fade above skyline */}
       <div className="absolute bottom-0 w-full h-48 bg-gradient-to-t from-purple-900/60 to-transparent pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl w-full px-6 flex flex-col md:grid md:grid-cols-3 gap-8 md:gap-12 items-center">
+      <div className="
+  relative z-10
+  w-full
+  max-w-6xl
+  mx-auto
+  px-4 sm:px-6
+  flex flex-col
+  lg:grid lg:grid-cols-3
+  gap-8
+  items-center
+">
+
         
         {/* LEFT CONTENT */}
       <div className="text-white max-w-md w-full flex flex-col items-start">

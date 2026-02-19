@@ -7,10 +7,20 @@ export default function SolutionGrid({
   onDrop,
   correctRows = {},
   shakeRow,
-  activeDemoTile,
 }) {
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div
+      className="
+        w-full
+        max-w-[420px]
+        sm:max-w-[520px]
+        mx-auto
+        flex flex-col
+        items-center
+        gap-6 sm:gap-8
+        px-2
+      "
+    >
       {SOLUTION_ORDER.map((solution, rowIndex) => (
         <SolutionRow
           key={solution}
