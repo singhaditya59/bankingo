@@ -25,18 +25,13 @@ export default function SolutionRow({
   return (
     <div
       className={`
-        flex flex-col sm:flex-row
-        items-center justify-center
-        gap-4 sm:gap-8
-        w-full
-        select-none
-        touch-none
+        flex items-center justify-center gap-4 sm:gap-8
         transition-all duration-300
         ${shouldShake ? "animate-shake" : ""}
       `}
     >
       {/* Tiles */}
-      <div className="flex gap-2 sm:gap-5">
+      <div className="flex gap-3 sm:gap-5">
         {rowItems.map((keyword, colIndex) => {
           const index = rowIndex * 4 + colIndex;
 
@@ -51,25 +46,17 @@ export default function SolutionRow({
               onDragStart={() => onDragStart(index)}
               onDragOver={(e) => e.preventDefault()}
               onDrop={() => onDrop(index)}
-              onTouchStart={() => onDragStart(index)}
-              onTouchEnd={() => onDrop(index)}
-              style={{ touchAction: "none" }}
               className={`
                 relative
-                w-14 h-14
-                xs:w-16 xs:h-16
-                sm:w-20 sm:h-20
-                md:w-24 md:h-24
+                w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24
                 rounded-full
                 flex items-center justify-center
-                text-[8px] xs:text-[9px] sm:text-xs
-                font-semibold text-center
+                text-[9px] sm:text-xs font-semibold text-center
                 px-1
                 backdrop-blur-md
                 border
                 overflow-hidden
-                cursor-grab active:cursor-grabbing
-                select-none
+                cursor-pointer
                 transition-all duration-300 hover:scale-105
                 ${
                   isCorrectTile
