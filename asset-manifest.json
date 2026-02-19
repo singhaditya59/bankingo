@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bankingo/static/css/main.4c94abe8.css",
-    "main.js": "/bankingo/static/js/main.bc69caa8.js",
+    "main.js": "/bankingo/static/js/main.af96c1b3.js",
     "static/media/skyline.png": "/bankingo/static/media/skyline.aaed7cbc92c71cd5be64.png",
     "static/media/newgen_logo.png": "/bankingo/static/media/newgen_logo.a2e0c35ed0aed4ac9f56.png",
     "index.html": "/bankingo/index.html",
     "main.4c94abe8.css.map": "/bankingo/static/css/main.4c94abe8.css.map",
-    "main.bc69caa8.js.map": "/bankingo/static/js/main.bc69caa8.js.map"
+    "main.af96c1b3.js.map": "/bankingo/static/js/main.af96c1b3.js.map"
   },
   "entrypoints": [
     "static/css/main.4c94abe8.css",
-    "static/js/main.bc69caa8.js"
+    "static/js/main.af96c1b3.js"
   ]
 }
