@@ -12,6 +12,7 @@ export default function TashkeelGrid() {
   const [name, setName] = useState(""); 
   const [organization, setOrganization] = useState("");
   const [emailError, setEmailError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validateEmail = (value) => {
     setEmail(value);
@@ -39,7 +40,9 @@ export default function TashkeelGrid() {
   };*/
 
   const handleSubmit = async () => {
-  if (emailError || !email || !name || !organization) return;
+  if (emailError || !email || !name || !organization || isSubmitting) return;
+
+  setIsSubmitting(true);
 
   try {
     const response = await fetch(window.APP_CONFIG.GOOGLE_SCRIPT_URL, {
@@ -58,10 +61,12 @@ export default function TashkeelGrid() {
       navigate("/power-your-bank");
     } else {
       alert("Something went wrong. Please try again.");
+      setIsSubmitting(false);
     }
   } catch (error) {
     console.error(error);
     alert("Submission failed.");
+    setIsSubmitting(false);
   }
 };
 
@@ -278,14 +283,14 @@ export default function TashkeelGrid() {
 
               <button
                 onClick={handleSubmit}
-                disabled={!!emailError || !email}
+                disabled={!!emailError || !email || !name || !organization || isSubmitting}
                 className={`w-full mt-4 py-2 rounded-full font-semibold tracking-wider ${
-                  emailError || !email
-                    ? "bg-gray-600"
+                  emailError || !email || !name || !organization || isSubmitting
+                    ? "bg-gray-600 cursor-not-allowed"
                     : "bg-orange-500 hover:bg-orange-600 shadow-[0_0_20px_rgba(255,140,0,0.6)]"
                 }`}
               >
-                Submit
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </div>
           </div>
