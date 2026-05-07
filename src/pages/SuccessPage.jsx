@@ -91,9 +91,9 @@ export default function SuccessPage() {
         </p>
 
         <h2 className="mt-6 text-xl sm:text-1xl font-extrabold text-white tracking-[0.25em] mb-2">
-        Add an X-Factor to Your Domain with 
+        Orchestrating End-to-end Banking Journeys  
         <br />
-        Newgen’s AI-first Banking Solutions
+        Across Every Domain
         </h2>
 
         <a

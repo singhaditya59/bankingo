@@ -83,7 +83,7 @@ export default function TashkeelGrid() {
       <img
           src={skyline}
           alt="City Skyline"
-          className="w-full object-cover opacity-30"
+          className="w-full object-cover opacity-50"
       />
       </div>
 
@@ -215,11 +215,11 @@ export default function TashkeelGrid() {
 
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-wide">
 
-            Domain Masters Wanted.
+            Newgen Orchestrates Intelligent Banking at Scale
           </h3>
 
           <p className="text-md font-light opacity-100 tracking-wider">
-            Time to Stress-test Your knowledge
+            Domain Masters Wanted
           </p>
         </div>
       </div>
