@@ -92,8 +92,6 @@ export default function SuccessPage() {
 
         <h2 className="mt-6 text-xl sm:text-1xl font-extrabold text-white tracking-[0.25em] mb-2">
         Orchestrating End-to-end Banking Journeys  
-        <br />
-        Across Every Domain
         </h2>
 
         <a

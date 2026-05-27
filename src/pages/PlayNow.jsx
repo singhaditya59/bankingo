@@ -83,7 +83,7 @@ export default function TashkeelGrid() {
       <img
           src={skyline}
           alt="City Skyline"
-          className="w-full object-cover opacity-50"
+          className="w-full object-cover opacity-35"
       />
       </div>
 
@@ -213,14 +213,15 @@ export default function TashkeelGrid() {
             What’s Your BQ (Banking Quotient)?
           </p>
 
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-wide">
+          <p className="text-md font-light opacity-100 tracking-wider">
+            Domain Masters Wanted
+          </p>
+
+          <h3 className="text-md font-semibold tracking-wide">
 
             Newgen Orchestrates Intelligent Banking at Scale
           </h3>
 
-          <p className="text-md font-light opacity-100 tracking-wider">
-            Domain Masters Wanted
-          </p>
         </div>
       </div>
 
