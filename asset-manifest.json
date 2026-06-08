@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6ed281f.css",
-    "main.js": "/static/js/main.53c76be9.js",
+    "main.css": "/static/css/main.05321808.css",
+    "main.js": "/static/js/main.870590da.js",
     "static/media/skyline.png": "/static/media/skyline.aaed7cbc92c71cd5be64.png",
+    "static/media/matrix-bg.png": "/static/media/matrix-bg.e2bcea6c910c981815db.png",
     "static/media/newgen_logo.png": "/static/media/newgen_logo.a2e0c35ed0aed4ac9f56.png",
     "index.html": "/index.html",
-    "main.c6ed281f.css.map": "/static/css/main.c6ed281f.css.map",
-    "main.53c76be9.js.map": "/static/js/main.53c76be9.js.map"
+    "main.05321808.css.map": "/static/css/main.05321808.css.map",
+    "main.870590da.js.map": "/static/js/main.870590da.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6ed281f.css",
-    "static/js/main.53c76be9.js"
+    "static/css/main.05321808.css",
+    "static/js/main.870590da.js"
   ]
 }
