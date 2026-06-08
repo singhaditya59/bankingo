@@ -135,7 +135,7 @@ const [grid, setGrid] = useState(() =>
       <li>REVIEW THE GRID</li>
       <li>
         IDENTIFY WHAT BELONGS UNDER RETAIL LENDING,
-        SME LENDING, COMMERCIAL LENDING & TRADE FINANCE
+        PAYMENT HUB, COMMERCIAL LENDING & TRADE FINANCE
       </li>
       <li>DRAG AND DROP TO THE RELEVANT CATEGORY</li>
     </ul>

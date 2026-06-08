@@ -1,5 +1,5 @@
 export const SOLUTIONS = {
-  "Payments Hub": [
+  "Payment Hub": [
     "SWIFT Payments",
     "ACH",
     "Remittance",
@@ -26,14 +26,14 @@ export const SOLUTIONS = {
 };
 
 export const SOLUTION_ORDER = [
-  "Payments Hub",
+  "Payment Hub",
   "Retail/ Consumer Loan Origination(RLOS)",
   "Commercial Loan Origination(CLOS)",
   "Trade Finance",
 ];
 
 export const SOLUTION_URLS = {
-  "Payments Hub": "https://newgensoft.com/solutions/industries/financial-institutions/transaction-banking/payment-hub/",
+  "Payment Hub": "https://newgensoft.com/solutions/industries/financial-institutions/transaction-banking/payment-hub/",
   "Retail/ Consumer Loan Origination(RLOS)": "https://newgensoft.com/solutions/industries/financial-institutions/retail-banking/consumer-retail-lending/",
   "Commercial Loan Origination(CLOS)": "https://newgensoft.com/solutions/industries/financial-institutions/commercial-banking/commercial-lending/",
   "Trade Finance": "https://newgensoft.com/solutions/industries/financial-institutions/transaction-banking/trade-finance/",
@@ -78,7 +78,7 @@ export const derangedShuffle = (arr) => {
 
 
 export const derangedShuffle2 = {
-  "Payments Hub": [
+  "Payment Hub": [
     "Financial Covenant Tracking",
     "Syndicated Loan Processing", 
     "Instant Credit Eligibility",
