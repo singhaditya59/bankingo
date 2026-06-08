@@ -1,9 +1,9 @@
 export const SOLUTIONS = {
-  "SME Lending": [
-    "Invoice Financing",
-    "Merchant Cash Advance",
-    "Cash Flow Based Lending",
-    "MSME Term Loans",
+  "Payments Hub": [
+    "SWIFT Payments",
+    "ACH",
+    "Remittance",
+    "Cross-border payment",
   ],
   "Retail/ Consumer Loan Origination(RLOS)": [
     "Pre-approved Offers",
@@ -26,17 +26,17 @@ export const SOLUTIONS = {
 };
 
 export const SOLUTION_ORDER = [
-  "SME Lending",
+  "Payments Hub",
   "Retail/ Consumer Loan Origination(RLOS)",
   "Commercial Loan Origination(CLOS)",
   "Trade Finance",
 ];
 
 export const SOLUTION_URLS = {
-  "SME Lending": "https://newgensoft.com/ae/solutions/industries/financial-institutions/islamic-banking/",
-  "Retail/ Consumer Loan Origination(RLOS)": "https://newgensoft.com/ae/solutions/industries/financial-institutions/retail-banking/",
-  "Commercial Loan Origination(CLOS)": "https://newgensoft.com/ae/solutions/industries/financial-institutions/commercial-banking/",
-  "Trade Finance": "https://newgensoft.com/ae/solutions/industries/financial-institutions/transaction-banking/trade-finance/",
+  "Payments Hub": "https://newgensoft.com/solutions/industries/financial-institutions/transaction-banking/payment-hub/",
+  "Retail/ Consumer Loan Origination(RLOS)": "https://newgensoft.com/solutions/industries/financial-institutions/retail-banking/consumer-retail-lending/",
+  "Commercial Loan Origination(CLOS)": "https://newgensoft.com/solutions/industries/financial-institutions/commercial-banking/commercial-lending/",
+  "Trade Finance": "https://newgensoft.com/solutions/industries/financial-institutions/transaction-banking/trade-finance/",
 };
 
 
@@ -78,26 +78,26 @@ export const derangedShuffle = (arr) => {
 
 
 export const derangedShuffle2 = {
-  "SME Lending": [
+  "Payments Hub": [
     "Financial Covenant Tracking",
     "Syndicated Loan Processing", 
     "Instant Credit Eligibility",
     "Bank Guarantees",
   ],
   "Retail/ Consumer Loan Origination(RLOS)": [
-    "Invoice Financing",
+    "ACH",
     "Corporate Credit Structuring",
     "Letters of Credit",
     "Bills for Collection",
 ],
   "Commercial Loan Origination(CLOS)": [
     "Pre-approved Offers",
-    "Cash Flow Based Lending",
-    "Merchant Cash Advance",
+    "SWIFT Payments",
+    "Cross-border payment",
     "LC issuance",
   ],
   "Trade Finance": [
-    "MSME Term Loans",
+    "Remittance",
     "Group Exposure Limits",
     "Instant Personal Loans",
     "Personalized Loan Offers",

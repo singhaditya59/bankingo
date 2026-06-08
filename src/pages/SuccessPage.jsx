@@ -1,4 +1,3 @@
-import skyline from "../assets/skyline.png";
 import newgenlogo from "../assets/newgen_logo.png";
 
 export default function SuccessPage() {
@@ -12,20 +11,11 @@ export default function SuccessPage() {
         items-center
         justify-center
         overflow-hidden
-        bg-[radial-gradient(circle_at_70%_40%,#2a003f_0%,#160024_40%,#0b0015_70%,#000000_100%)]
+        bg-gradient-to-r from-blue-900 via-purple-900 to-purple-950
       "
     >
       {/* Purple Glow Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-800/20 via-transparent to-black/60" />
-
-      {/* Skyline */}
-      <div className="absolute -bottom-10 sm:-bottom-14 md:-bottom-20 left-0 w-full pointer-events-none">
-        <img
-          src={skyline}
-          alt="City Skyline"
-          className="w-full object-cover opacity-20"
-        />
-      </div>
 
       {/* Bottom Fade */}
       <div className="absolute bottom-0 w-full h-48 bg-gradient-to-t from-purple-900/60 to-transparent pointer-events-none" />
@@ -56,17 +46,6 @@ export default function SuccessPage() {
         </div>
 
 
-        {/* Heading */}
-        <h1
-          className="
-            text-4xl sm:text-5xl
-            font-extrabold
-            text-orange-400
-            drop-shadow-[0_0_25px_rgba(255,140,0,0.8)]
-          "
-        >
-          Mabrook!
-        </h1>
 
         {/* Subheading */}
         <h2
@@ -79,23 +58,26 @@ export default function SuccessPage() {
           "
         >
           You've Successfully Solved
-          <br />
           The Banking Grid
         </h2>
 
+        <h2 className="mt-6 text-xl sm:text-1xl font-extrabold text-white tracking-[0.25em] mb-2">
+        You came in as a Domain Master.  
+        </h2>
+
         {/* Message */}
-        <p className="mt-6 text-orange-100/80 text-sm sm:text-base leading-relaxed">
-          Keep an eye out. Your reward is on its way!
-          <br />
-          A Newgen representative will reach out shortly.
+        <p className="mt-6 text-orange-400 text-xl sm:text-2xl font-extrabold leading-relaxed">
+          You leave with the X Factor.
         </p>
 
         <h2 className="mt-6 text-xl sm:text-1xl font-extrabold text-white tracking-[0.25em] mb-2">
-        Orchestrating End-to-end Banking Journeys  
+        Because modern banking isn't about knowing the domains.
+        <br />
+        It's about knowing what connects them.
         </h2>
 
         <a
-  href="https://newgensoft.com/ae/solutions/industries/financial-institutions/"
+  href="https://newgensoft.com/solutions/industries/financial-institutions/"
   target="_blank"
   rel="noopener noreferrer"
   className="
@@ -116,7 +98,7 @@ export default function SuccessPage() {
     cursor-pointer
   "
 >
-  Explore Solutions
+  Explore X
 </a>
 
       </div>

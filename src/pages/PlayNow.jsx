@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import skyline from "../assets/skyline.png";
 import newgenlogo from "../assets/newgen_logo.png";
+import matrixbg from "../assets/matrix-bg.png";
 
 const blockedDomains = ["gmail", "rediffmail", "hotmail"];
 
@@ -72,158 +72,49 @@ export default function TashkeelGrid() {
 
 
   return (
-    <div className="font-montserrat relative min-h-screen flex items-center justify-center overflow-hidden
-      bg-[radial-gradient(circle_at_70%_40%,#2a003f_0%,#160024_40%,#0b0015_70%,#000000_100%)]">
+    <div
+      className="font-montserrat relative min-h-screen overflow-hidden text-white bg-center bg-cover bg-no-repeat"
+      style={{ backgroundImage: `url(${matrixbg})` }}
+    >
+      <div className="absolute inset-0 bg-black/10" />
 
-      {/* Soft purple overlay glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-800/20 via-transparent to-black/60" />
+          <img
+            src={newgenlogo}
+            alt="Newgen Logo"
+            className="absolute top-[7%] left-1/2 -translate-x-1/2 w-[100px] sm:w-[120px] lg:w-[130px]"
+          />
 
-      {/* Skyline */}
-      <div className="absolute -bottom-10 sm:-bottom-14 md:-bottom-20 left-0 w-full pointer-events-none">
-      <img
-          src={skyline}
-          alt="City Skyline"
-          className="w-full object-cover opacity-35"
-      />
-      </div>
-
-      {/* Fade effect above skyline */}
-      <div className="absolute bottom-0 w-full h-48 bg-gradient-to-t from-purple-900/60 to-transparent pointer-events-none" />
-
-      <div className="
-  relative z-10 w-full max-w-[1200px]
-  flex flex-col lg:flex-row
-  items-center lg:items-start
-  justify-center lg:justify-between
-  px-6 sm:px-8
-  gap-16
-">
-
-
-
-        {/* ================= GRID SECTION ================= */}
-        <div className="flex flex-col items-center">
-
-          <div className="grid grid-cols-4 gap-6">
-            {[
-              "", "", "", "",
-              "B", "A", "N", "K",
-              "", "", "", "",
-              "", "", "", "",
-            ].map((letter, idx) => (
+          <div className="absolute top-[35%] left-[13%] sm:left-[17%] flex items-center gap-2 sm:gap-3">
+            {["B", "A", "N", "K"].map((letter) => (
               <div
-                key={idx}
-                className={`
-                    relative
-                    w-16 h-16 sm:w-20 sm:h-20
-                    rounded-full
-                    flex items-center justify-center
-                    text-xl sm:text-2xl font-bold tracking-wider
-                    backdrop-blur-md
-                    border
-                    overflow-hidden
-                    transition-all duration-300 hover:scale-105
-                ${
-                    letter
-                    ? `
-                    bg-orange-500/10
-                    border-orange-400/80
-                    text-orange-300
-                    shadow-[0_0_16px_rgba(251,146,60,0.6)]
-                    `
-                    : `
-                    bg-white/5
-                    border-white/25
-                    text-white
-                    shadow-[0_0_10px_rgba(255,255,255,0.15)]
-                    `
-                  }
-                `}
-                >
-                {/* Gloss reflection */}
-                <div className="absolute top-0 left-0 w-full h-1/2 
-                bg-gradient-to-b from-white/40 to-transparent 
-                 rounded-full pointer-events-none" />
-                  {letter}
+                key={letter}
+                className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center
+                text-xs sm:text-sm font-bold tracking-[0.28em] pl-[2px]
+                bg-white/10 border border-orange-300/80 text-orange-200 backdrop-blur-md overflow-hidden
+                shadow-[0_0_14px_rgba(251,146,60,0.55)]
+                transition-all duration-300 hover:scale-110 hover:bg-white/15 hover:shadow-[0_0_24px_rgba(251,146,60,0.8)]"
+              >
+                <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/45 to-transparent rounded-full pointer-events-none" />
+                {letter}
               </div>
             ))}
           </div>
 
-          {/* PLAY BUTTON */}
+          <p className="absolute left-1/2 -translate-x-1/2 bottom-[20%] whitespace-nowrap text-center text-zinc-200/90 text-[clamp(0.6rem,1.3vw,0.85rem)] tracking-widest font-medium">
+            2 Minutes&nbsp;|&nbsp;4x4 Grid&nbsp;|&nbsp;Domain Masters Wanted
+          </p>
+
           <button
             onClick={() => setOpen(true)}
-            className="
-  mt-10
-  px-12 py-3
-  rounded-full
-  text-orange-400
-  text-lg font-semibold tracking-widest
-  border-2 border-orange-400
-  bg-white/5
-  backdrop-blur-xl
-  shadow-[0_0_20px_rgba(255,140,0,0.6)]
-  drop-shadow-[0_0_10px_rgba(255,140,0,0.8)]
-  animate-pulse
-  hover:bg-orange-500/20
-  hover:shadow-[0_0_40px_rgba(255,140,0,1)]
-  hover:text-orange-300
-  transition-all duration-300
-"
-
-        >
-            LET'S BEGIN
+            className="absolute left-1/2 -translate-x-1/2 bottom-[8%] px-10 py-2.5 rounded-full
+            text-white text-sm sm:text-base font-semibold italic
+            bg-gradient-to-b from-[#ffbf7e] to-[#ff8a2a]
+            shadow-[0_6px_18px_rgba(255,138,42,0.4)]
+            hover:from-[#ffd09f] hover:to-[#ff972f] hover:scale-105
+            transition-all duration-300"
+          >
+            Play Now
           </button>
-        </div>
-
-        {/* ================= RIGHT CONTENT ================= */}
-        <div className="
-  relative
-  w-full lg:w-[480px]
-  text-center lg:text-right
-  text-white
-  flex flex-col
-  items-center lg:items-end
-">
-
-
-
-          {/* Logo */}
-<img
-  src={newgenlogo}
-  alt="Newgen Logo"
-  className="
-    w-[90px] sm:w-[110px] lg:w-[125px]
-    mb-10
-    self-center lg:self-end
-  "
-/>
-
-
-
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-orange-400 mb-2 leading-tight tracking-wide drop-shadow-[0_0_20px_rgba(255,140,0,0.6)]">
-            ترتيب
-          </h1>
-
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[0.25em] mb-2">
-
-            GRID
-          </h2>
-
-          <p className="text-orange-300 text-sm font-medium italic mb-8 tracking-wide">
-            What’s Your BQ (Banking Quotient)?
-          </p>
-
-          <p className="text-md font-light opacity-100 tracking-wider">
-            Domain Masters Wanted
-          </p>
-
-          <h3 className="text-md font-semibold tracking-wide">
-
-            Newgen Orchestrates Intelligent Banking at Scale
-          </h3>
-
-        </div>
-      </div>
 
       {/* ================= POPUP ================= */}
       {open && (

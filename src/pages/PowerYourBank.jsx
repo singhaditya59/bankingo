@@ -90,7 +90,7 @@ const [grid, setGrid] = useState(() =>
   }, [grid]);
 
   return (
-    <div className="font-montserrat relative min-h-screen flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_70%_40%,#2a003f_0%,#160024_40%,#0b0015_70%,#000000_100%)]">
+    <div className="font-montserrat relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 via-purple-900 to-purple-950">
       {/* Purple Glow Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-800/20 via-transparent to-black/60" />
 
@@ -115,22 +115,8 @@ const [grid, setGrid] = useState(() =>
       />
 
   {/* Heading */}
-  <h1 className="
-    text-3xl sm:text-3xl
-    font-extrabold
-    text-orange-400
-    leading-tight
-    tracking-wide
-    drop-shadow-[0_0_20px_rgba(255,140,0,0.6)]
-  ">
-    You’ve Entered the <br />
-    Banking War Room.
-  </h1>
+  <h1 className="text-lg sm:text-xl font-extrabold text-orange-400 leading-tight tracking-wide drop-shadow-[0_0_20px_rgba(255,140,0,0.6)] whitespace-nowrap">YOU HAVE ENTERED THE X ZONE</h1>
 
-  {/* Subtitle */}
-  <p className="mt-4 text-orange-200 text-sm tracking-wide font-medium">
-    2 Minutes. 4x4 Grid. Zero Guesswork
-  </p>
 
   {/* Instruction Card */}
   <div className="
@@ -142,16 +128,16 @@ const [grid, setGrid] = useState(() =>
   ">
     
     <p className="text-sm font-semibold mb-2">
-      How to Solve the Grid:
+      HOW TO SOLVE THE GRID:
     </p>
 
     <ul className="text-sm space-y-1 list-disc pl-5 opacity-90">
-      <li>Review the grid</li>
+      <li>REVIEW THE GRID</li>
       <li>
-        Identify what belongs under Retail Lending,
-        SME Lending, Commercial Lending & Trade Finance
+        IDENTIFY WHAT BELONGS UNDER RETAIL LENDING,
+        SME LENDING, COMMERCIAL LENDING & TRADE FINANCE
       </li>
-      <li>Drag and drop to the relevant category</li>
+      <li>DRAG AND DROP TO THE RELEVANT CATEGORY</li>
     </ul>
   </div>
 
